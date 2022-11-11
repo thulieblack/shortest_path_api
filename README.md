@@ -4,7 +4,11 @@
 - Design and implement an API that takes two words and a dictionary of words as input. Your API should return the shortest possible path between the two words.
 ---
 ### Solution Approach
-
+- ln order to solve the problem statement, l opted for a code-first approach since its a learning project.
+- The word dictionary contains the top 8 avenger hero characters and 2 villains.
+- After creating a solution function, it was time to choose an API to integrate with the code.
+- l choose to go with the FastAPI framework and GET method because of its simplicity.
+- Lastly, it was time to change and tweak the meta data and improve the swagger UI design.
 ---
 ### Languages and Frameworks used
 - Python 🐍
