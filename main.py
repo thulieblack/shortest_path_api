@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"mesage": "The shortest path between the Avengers start_word and end_word"}
+    return {"mesage": "The shortest path between two Avengers"}
 
 word_dict = ["ironman", "captain america", "hulk","thor", "black panther","dr strange", "falcon", "thanos", "spiderman",
              "antman", "wasp"]
