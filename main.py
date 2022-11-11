@@ -2,7 +2,16 @@ from fastapi import FastAPI
 from typing import Optional
 from fastapi.responses import JSONResponse
 
-app = FastAPI()
+description = """
+### Avengers Assemble API aims at finding the shortest path between two Avenger Hero's or Villain's 
+"""
+
+app = FastAPI(
+    title= "Avengers Assemble",
+    version= "1.0",
+    description= description
+
+)
 
 @app.get("/")
 async def root():
@@ -12,7 +21,7 @@ word_dict = ["ironman", "captain america", "hulk","thor", "black panther","dr st
              "antman", "wasp"]
 
 
-@app.get("/shortest-path")
+@app.get("/shortest-path/")
 async def shortest_path(start_word: str, end_word: str):
     if start_word == end_word:
         return 0
