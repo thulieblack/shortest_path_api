@@ -3,7 +3,7 @@ from typing import Optional
 from fastapi.responses import JSONResponse
 
 description = """
-### Avengers Assemble API aims at finding the shortest path between two Avenger Hero's or Villain's 🚀🚀
+### Avengers Assemble API aims at finding the shortest path between two Avenger Hero's or Villain 🚀🚀
 """
 
 app = FastAPI(
