@@ -2,14 +2,15 @@
 
 ### Problem Statement
 - Design and implement an API that takes two words and a dictionary of words as input. Your API should return the shortest possible path between the two words.
-
+---
 ### Solution Approach
 
-
+---
 ### Languages and Frameworks used
 - Python 🐍
 - FastAPI ⚡
 
+---
 ### Results
 
 #### FastAPI Docs: 
