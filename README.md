@@ -19,4 +19,3 @@
 
 URL🔗: http://127.0.0.1:8000/docs#/default/shortest_path_shortest_path__get 
 
-![image](https://user-images.githubusercontent.com/66913810/201379735-d4333fdb-c21f-497e-8cce-69764fe37191.png)
