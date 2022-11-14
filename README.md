@@ -88,8 +88,7 @@ word_dict = ["ironman", "captain america", "hulk","thor", "black panther","dr st
 def distance(word_dict, start_wrd, end_wrd):
     if start_wrd == end_wrd:
         return 0
-
-    # assume total length of the string as min distance
+        
     min_dist = len(word_dict) + 1
 
     # traverse through the entire dict
@@ -99,8 +98,6 @@ def distance(word_dict, start_wrd, end_wrd):
             for search in range(len(word_dict)):
 
                 if word_dict[search] == end_wrd:
-
-                    # the distance between the words is the first word index - the curr word index
                     curr_wrd = abs(index - search) - 1;
 
                     # comparing current distance with previous distance
@@ -120,8 +117,8 @@ Output:
 4. ### Running the Shortest Path API
 
 The final step is to insert the code for our Shortest Path API found [here](https://github.com/thulieblack/shortest_path_api/blob/main/main.py) to your already created `main.py` file. Things to note when running our API:
-- When creating a dictionary of words, there shouldn't be any parenthesis, commas, or special characters. The dictionary words can be seperated by a space.
-- The start word and end word can be different lenghts and must be contained inside the word dictionary. If not, the execution will return an error message.
+- When creating a dictionary of words in the API inference, there shouldn't be any parenthesis, commas, or special characters. The dictionary words can be seperated by a space.
+- The start word and end word can be different lengths and must be contained inside the word dictionary. If not, the execution will return an error message.
 
 5. ### Final Results
 
