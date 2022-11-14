@@ -16,10 +16,18 @@ app = FastAPI(
     description= description,
     license_info= {"name" : "Apache 2.0",
               "url" : "http://www.apache.org/licenses/LICENSE-2.0.html",
-              "version" : "1.0.0"
+              "version" : "1.0.0"},
+    responses= {200: {"description": "Successful Operation",
+                      "content": {"application/json": {"schema":{"type":"object",
+                                                                 "properties": {"Shortest Path":{"type": "integer", "example": "9"}
+                                                                                }
+                                                                 }
+                                                       }
+                                  }
+                      },
+                422: {"description": "Invalid Parameters"}
 
-  }
-
+    }
 
 )
 
@@ -37,7 +45,6 @@ async def shortest_path(word_dict: str = Query(example= "apple pear banana orang
 
     if start_word not in word_dict:
         return JSONResponse("Invalid Parameter!")
-    
     # get individual words in a list
     word_dict = word_dict.split(" ")
 
